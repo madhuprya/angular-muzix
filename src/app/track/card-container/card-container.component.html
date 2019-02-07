@@ -1,0 +1,7 @@
+<h1>card container</h1>
+<app-card *ngFor="let trk of track"
+[imageName] = "trk['name']"
+[imageUrl] = "trk['image'][3]['#text']"
+[track] = "trk"
+(addTrack)= "addToWishList($event)"  style="height:250px; width:300px; margin:100px 20px 100px 50px; float: left"></app-card>
+
